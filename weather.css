@@ -1,0 +1,25 @@
+body {
+    background-image: "url('./pictures/default.jpg')";
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: whitesmoke;
+    text-shadow: 2px 2px 1px rgb(36, 35, 35);
+    font-family: 'Titillium Web'sans-serif;
+}
+
+.weatherContainer {
+    background-color: rgb(20, 20, 20);
+    box-shadow: 2px 2px 5px rgb(63, 62, 62);
+    padding: 50px;
+    border-radius: 15px;
+    position: absolute;
+    visibility: hidden;
+
+}
+
+.weatherContainer h1 {
+    margin: 5px;
+    font-size: 44px;
+
+}
