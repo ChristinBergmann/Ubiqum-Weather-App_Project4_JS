@@ -1,4 +1,3 @@
-let appID = '3038a6bb750f3bd12c90c7b1e2091aae';
 let units = 'metric';
 let searchMethod;
 
