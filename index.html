@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Weather-App_International</title>
-        <link rel="stylesheet" href="weather.css">
+        <link rel="stylesheet" href="weather.css" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
     </head>
 
@@ -16,9 +16,11 @@
 
 
     <div id="searchContainer">
-        <input class="search" type="text" placeholder="City or Zip + Country Code" id="searchInput">
+        <input class="search" type="text" placeholder=" 'City or Zip' space 'Country Code' " id="searchInput"
+            pattern="[a-zA-Z]*" spellcheck="true">
         <button class="search" id="searchButton">SEARCH</button>
     </div>
+
     <div id="weatherContainer">
         <div id="weatherDescription">
             <h1 id="cityName"></h1>
@@ -27,7 +29,9 @@
                 <div id="weatherDescriptionMain"></div>
                 <div><img id="iconImg"></div>
             </div>
+
             <hr>
+
             <div id="wind" class="bottomDetails"></div>
             <div id="humidity" class="bottomDetails"></div>
         </div>
