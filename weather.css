@@ -15,13 +15,12 @@ body {
   border-radius: 15px;
   position: absolute;
   visibility: hidden;
-  margin-top: 20%;
+  /* margin-top: 20%; */
 }
 
 #weatherContainer h1 {
   margin: 5px;
   font-size: 44px;
-  /* justify-content: center; */
 }
 
 /*----need to change to responsive vw vh-------*/

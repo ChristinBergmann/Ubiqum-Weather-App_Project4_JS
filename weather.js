@@ -80,7 +80,7 @@ function init(dataServer) {
 function setPositionWeatherBox() {
 
     let weatherContainer = document.getElementById("weatherContainer");
-    let weatherContainerHeight = weatherContainer.clientHeigth;
+    let weatherContainerHeight = weatherContainer.clientHeight;
     let weatherContainerWidth = weatherContainer.clientWidth;
 
     weatherContainer.style.left = `calc(50% - ${weatherContainerWidth/2}px)`;
