@@ -13,11 +13,12 @@ function searchWeather(searchTerm) {
 
     fetch(`https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?${searchMethod}=${searchTerm}&APPID=${appID}&units=${units}`, {
         /*maybe put ,us back on link in the end*/
-        method: 'POST',
+        method: 'GET',
         headers: {
-            'Content-Type': 'application/json',
+            Accept: 'application/json',
+            "Content-Type": "application/x-www-form-urlencoded",
             "X-Requested-With": "XMLHttpRequest",
-            'API-Key': 'secret',
+            'Access-Control-Allow-Origin': "http://api.openweathermap.org",
             credentials: "include"
         }
         .then(result => {
@@ -28,6 +29,7 @@ function searchWeather(searchTerm) {
 
     })
 }
+
 
 function init(dataServer) {
     console.log(dataServer)
