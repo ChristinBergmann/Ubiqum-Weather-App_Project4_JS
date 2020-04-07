@@ -11,12 +11,14 @@ function getSearchMethod(searchTerm) {
 function searchWeather(searchTerm) {
     getSearchMethod(searchTerm);
 
-    await fetch(`https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?${searchMethod}=${searchTerm}&APPID=${appID}&units=${units}`, {
+    fetch(`https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?${searchMethod}=${searchTerm}&APPID=${appID}&units=${units}`, {
         /*maybe put ,us back on link in the end*/
         method: 'POST',
         headers: {
+            'Content-Type': 'application/json',
             "X-Requested-With": "XMLHttpRequest",
-            'API-Key': 'secret'
+            'API-Key': 'secret',
+            credentials: "include"
         }
         .then(result => {
             return result.json();
