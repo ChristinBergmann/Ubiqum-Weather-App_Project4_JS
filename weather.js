@@ -49,7 +49,7 @@ function init(dataServer) {
             break;
 
         default:
-            // document.body.style.backgroundImage = "url('./pictures/default1.jpg')";
+            document.body.style.backgroundImage = "url('./pictures/default1.jpg')";
             break;
     }
     let weatherDescriptionMain = document.getElementById("weatherDescriptionMain")
