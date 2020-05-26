@@ -27,11 +27,18 @@ function init(dataServer) {
         case "Clear":
             document.body.style.backgroundImage = "url('./pictures/clear1.jpg')";
             break;
-
         case "Clouds":
             document.body.style.backgroundImage = "url('./pictures/cloudy.jpg')";
             break;
-
+        case "light clouds":
+            document.body.style.backgroundImage = "url('./pictures/cloudylight.jpg')";
+            break;
+        case "overcast clouds":
+            document.body.style.backgroundImage = "url('./pictures/overcast1.jpg')";
+            break;
+        case "Fog":
+            document.body.style.backgroundImage = "url('./pictures/foggy.jpg')";
+            break;
         case "Rain":
         case "Drizzle":
             document.body.style.backgroundImage = "url('./pictures/rainy.jpg')";
@@ -39,17 +46,14 @@ function init(dataServer) {
         case "Mist":
             document.body.style.backgroundImage = "url('./pictures/mist.jpg')";
             break;
-
         case "Snow":
             document.body.style.backgroundImage = "url('./pictures/snowy.jpg')";
             break;
-
         case "Thunderstorm":
             document.body.style.backgroundImage = "url('./pictures/stormy.jpg')";
             break;
-
         default:
-            document.body.style.backgroundImage = "url('./pictures/default1.jpg')";
+            document.body.style.backgroundImage = "url('./pictures/clear.jpg')";
             break;
     }
     let weatherDescriptionMain = document.getElementById("weatherDescriptionMain")
