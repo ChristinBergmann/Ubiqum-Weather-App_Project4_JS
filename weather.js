@@ -27,23 +27,11 @@ function searchWeather(searchTerm) {
 function init(dataServer) {
   console.log(dataServer);
   switch (dataServer.weather[0].main) {
-    case "clear sky":
-      document.body.style.backgroundImage = "url('./pictures/clear.jpg')";
-      break;
     case "Clear":
       document.body.style.backgroundImage = "url('./pictures/clear1.jpg')";
       break;
     case "Clouds":
       document.body.style.backgroundImage = "url('./pictures/cloudy.jpg')";
-      break;
-    case "light clouds":
-      document.body.style.backgroundImage = "url('./pictures/cloudylight.jpg')";
-      break;
-    case "overcast clouds":
-      document.body.style.backgroundImage = "url('./pictures/overcast1.jpg')";
-      break;
-    case "broken clouds":
-      document.body.style.backgroundImage = "url('./images/broken-clouds.jpg')";
       break;
     case "Fog":
       document.body.style.backgroundImage = "url('./pictures/foggy.jpg')";
@@ -64,12 +52,24 @@ function init(dataServer) {
     case "Thunderstorm":
       document.body.style.backgroundImage = "url('./pictures/stormy.jpg')";
       break;
+    case "clear sky":
+      document.body.style.backgroundImage = "url('./pictures/clear.jpg')";
+      break;
+    case "light clouds":
+      document.body.style.backgroundImage = "url('./pictures/cloudylight.jpg')";
+      break;
+    case "overcast clouds":
+      document.body.style.backgroundImage = "url('./pictures/overcast1.jpg')";
+      break;
+    case "broken clouds":
+      document.body.style.backgroundImage = "url('./images/broken-clouds.jpg')";
+      break;
     default:
       document.body.style.backgroundImage = "url('./pictures/clear.jpg')";
       break;
   }
   console.log(dataServer.weather[0].main);
-
+  console.log(dataServer.weather[0].description);
   let weatherDescriptionMain = document.getElementById(
     "weatherDescriptionMain"
   );
