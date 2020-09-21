@@ -8,6 +8,12 @@ body {
   font-family: "Titillium Web" sans-serif;
 }
 
+@media screen and (min-width: 375px) {
+  body {
+    background-size: auto;
+  }
+}
+
 #weatherContainer {
   background-color: rgba(20, 20, 20, 0.6);
   box-shadow: 2px 2px 5px black;
