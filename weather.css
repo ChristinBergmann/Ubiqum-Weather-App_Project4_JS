@@ -12,6 +12,10 @@ body {
   body {
     background-size: auto;
   }
+  #searchContainer input {
+    width: 120px;
+    border-radius: 5px;
+  }
 }
 
 #weatherContainer {
