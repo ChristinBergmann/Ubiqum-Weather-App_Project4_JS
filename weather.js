@@ -26,7 +26,7 @@ function searchWeather(searchTerm) {
 
 function init(dataServer) {
   console.log(dataServer);
-  switch (dataServer.weather[0].main) {
+  switch (dataServer.weather[0].description) {
     case "Clear":
       document.body.style.backgroundImage = "url('./pictures/clear1.jpg')";
       break;
@@ -64,6 +64,10 @@ function init(dataServer) {
     case "broken clouds":
       document.body.style.backgroundImage = "url('./images/broken-clouds.jpg')";
       break;
+    case "scattered clouds":
+      document.body.style.backgroundImage = "url('./images/cloudy2.jpg')";
+      break;
+
     default:
       document.body.style.backgroundImage = "url('./pictures/clear.jpg')";
       break;
@@ -86,7 +90,7 @@ function init(dataServer) {
   weatherDescriptionMain.innerText = resultDescription.toUpperCase();
 
   temperatureElement.innerHTML =
-    Math.floor(dataServer.main.temp) + " °C" + "...yeah";
+    Math.floor(dataServer.main.temp / 10) + " °C" + "...yeah";
   console.log(temperatureElement);
   windElement.innerHTML =
     "Wind blows at " + Math.floor(dataServer.wind.speed) + " mph" + "...wohoo";
