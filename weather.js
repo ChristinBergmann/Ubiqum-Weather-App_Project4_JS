@@ -53,7 +53,7 @@ function init(dataServer) {
       document.body.style.backgroundImage = "url('./pictures/stormy.jpg')";
       break;
     case "clear sky":
-      document.body.style.backgroundImage = "url('./pictures/clear.jpg')";
+      document.body.style.backgroundImage = "url('./pictures/clear1.jpg')";
       break;
     case "light clouds":
       document.body.style.backgroundImage = "url('./pictures/cloudylight.jpg')";
@@ -62,10 +62,11 @@ function init(dataServer) {
       document.body.style.backgroundImage = "url('./pictures/overcast1.jpg')";
       break;
     case "broken clouds":
-      document.body.style.backgroundImage = "url('./images/broken-clouds.jpg')";
+      document.body.style.backgroundImage =
+        "url('./pictures/broken-clouds.jpg')";
       break;
     case "scattered clouds":
-      document.body.style.backgroundImage = "url('./images/cloudy2.jpg')";
+      document.body.style.backgroundImage = "url('./pictures/cloudy2.jpg')";
       break;
 
     default:
