@@ -20,7 +20,15 @@ function searchWeather(searchTerm) {
       return result.json();
     })
     .then((result) => {
-      init(result);
+      if (result.cod === 200) {
+        init(result);
+      } else {
+        resultMessage = window.alert(
+          result.message +
+            ": " +
+            " add ' a comma and country code ' and try again!"
+        );
+      }
     });
 }
 
@@ -68,13 +76,19 @@ function init(dataServer) {
     case "scattered clouds":
       document.body.style.backgroundImage = "url('./pictures/cloudy2.jpg')";
       break;
+    case "light rain":
+      document.body.style.backgroundImage = "url('./pictures/lightrain.jpg')";
+      break;
+    case "moderate rain":
+      document.body.style.backgroundImage = "url('./pictures/rainy.jpg')";
+      break;
 
     default:
       document.body.style.backgroundImage = "url('./pictures/clear.jpg')";
       break;
   }
-  console.log(dataServer.weather[0].main);
-  console.log(dataServer.weather[0].description);
+  // console.log(dataServer.weather[0].main);
+  // console.log(dataServer.weather[0].description);
   let weatherDescriptionMain = document.getElementById(
     "weatherDescriptionMain"
   );
