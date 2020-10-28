@@ -146,3 +146,17 @@ document.getElementById("searchButton").addEventListener("click", () => {
   let searchTerm = document.getElementById("searchInput").value;
   if (searchTerm) searchWeather(searchTerm);
 });
+
+function handleKeyPress(e) {
+  let searchButton = document.getElementById("searchButton");
+
+  e = e || window.event;
+  if (e.keyCode === 13) {
+    searchButton.click();
+    return false;
+  }
+}
+
+let searchInput;
+searchInput = document.getElementById("searchInput");
+searchInput.onkeypress = handleKeyPress;
