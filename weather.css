@@ -1,5 +1,5 @@
 body {
-  background-image: url("./pictures/default1.jpg");
+  background-image: url("./picturesHOR/res2_default-hor.jpg");
   background-size: auto;
   background-repeat: no-repeat;
   background-position: center;
@@ -25,12 +25,16 @@ body {
   border-radius: 15px;
   position: absolute;
   visibility: hidden;
-  /* margin-top: 20%; */
 }
 
 #weatherContainer h1 {
   margin: 5px;
   font-size: 44px;
+}
+
+#weatherContainer h2 {
+  margin: 5px;
+  font-size: 30px;
 }
 
 /*----need to change to responsive vw vh-------*/
