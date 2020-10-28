@@ -16,6 +16,11 @@ body {
     width: 120px;
     border-radius: 5px;
   }
+  #weatherContainer {
+    width: auto;
+    position: absolute;
+    visibility: hidden;
+  }
 }
 
 #weatherContainer {
