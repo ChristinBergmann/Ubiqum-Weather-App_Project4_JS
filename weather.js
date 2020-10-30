@@ -33,103 +33,101 @@ function searchWeather(searchTerm) {
 }
 
 function init(dataServer) {
-  console.log(dataServer);
-  switch (dataServer.weather[0].main) {
-    case "Clear":
-      document.body.style.backgroundImage = "url('./picturesHOR/res_clear-hor.jpg')";
-      break;
-    case "Clouds":
-      document.body.style.backgroundImage = "url('./picturesHOR/res_brokenclouds-hor.jpg')";
-      break;
-    case "Fog":
-      document.body.style.backgroundImage = "url('./picturesHOR/res_foggy-hor.jpg')";
-      break;
-    case "Rain":
-      document.body.style.backgroundImage = "url('./picturesHOR/res_rainy-hor.jpg')";
-      break;
-    case "Drizzle":
-      document.body.style.backgroundImage = "url('./picturesHOR/res_lightrain-hor.jpg')";
-      break;
-    case "Smoke":
-      document.body.style.backgroundImage = "url('./picturesHOR/res_smoke-hor.jpg')";
-      break;
-    case "Mist":
-      document.body.style.backgroundImage = "url('./picturesHOR/res_mist-hor.jpg')";
-      break;
-    case "Smog":
-      document.body.style.backgroundImage = "url('./picturesHOR/res_smog-hor.jpg')";
-      break;
-    case "Snow":
-      document.body.style.backgroundImage = "url('./picturesHOR/res_snowy-hor.jpg')";
-      break;
-    case "Thunderstorm":
-      document.body.style.backgroundImage = "url('./picturesHOR/res_thunder1-hor.jpg')";
-      break;
-    // case "clear sky":
-    //   document.body.style.backgroundImage = "url('./picturesHOR/res_clear-hor.jpg')";
-    //   break;
-    // case "light clouds", "few clouds":
-    //   document.body.style.backgroundImage = "url('./picturesHOR/res_lightclouds-hor.jpg')";
-    //   break;
-    // case "overcast clouds":
-    //   document.body.style.backgroundImage = "url('./picturesHOR/res_overcast1-ver.jpg')";
-    //   break;
-    // case "broken clouds":
-    //   document.body.style.backgroundImage = "url('./picturesHOR/res_brokenclouds-hor.jpg')";
-    //   break;
-    // case "scattered clouds":
-    //   document.body.style.backgroundImage = "url('./picturesHOR/res_brokenclouds-hor.jpg')";
-    //   break;
-    // case "light rain", "dizzle":
-    //   document.body.style.backgroundImage = "url('./picturesHOR/res_lightrain-hor.jpg')";
-    //   break;
-    // case "moderate rain":
-    //   document.body.style.backgroundImage = "url('./picturesHOR/res_rainy-hor.jpg')";
-    //   break;
-    // case "thunderstorm", "light thunderstorm", "heavy thunderstorm":
-    //   document.body.style.backgroundImage = "url('./picturesHOR/res_thunder1-hor.jpg')";
-    //   break;
-    // case "smoke":
-    //   document.body.style.backgroundImage = "url('./picturesHOR/res_smoke-hor.jpg')";
-    //   break;
-    // case "smog":
-    //   document.body.style.backgroundImage = "url('./picturesHOR/res_smog-hor.jpg')";
-    //   break;
-    // case "snow", "light snow":
-    //   document.body.style.backgroundImage = "url('./picturesHOR/res_snowy-hor.jpg')";
-    //   break;
-    //     case "mist":
-    //   document.body.style.backgroundImage = "url('./picturesHOR/res_mist-hor.jpg')";
-    //   break;
+    console.log(dataServer);
+    switch (dataServer.weather[0].main) {
+      case "Clear":
+        document.body.style.backgroundImage = "url('./picturesHOR/res_clear-hor.jpg')";
+        break;
+      case "Clouds":
+        document.body.style.backgroundImage = "url('./picturesHOR/res_brokenclouds-hor.jpg')";
+        break;
+      case "Fog":
+        document.body.style.backgroundImage = "url('./picturesHOR/res_foggy-hor.jpg')";
+        break;
+      case "Rain":
+        document.body.style.backgroundImage = "url('./picturesHOR/res_rainy-hor.jpg')";
+        break;
+      case "Drizzle":
+        document.body.style.backgroundImage = "url('./picturesHOR/res_lightrain-hor.jpg')";
+        break;
+      case "Smoke":
+        document.body.style.backgroundImage = "url('./picturesHOR/res_smoke-hor.jpg')";
+        break;
+      case "Mist":
+        document.body.style.backgroundImage = "url('./picturesHOR/res_mist-hor.jpg')";
+        break;
+      case "Smog":
+        document.body.style.backgroundImage = "url('./picturesHOR/res_smog-hor.jpg')";
+        break;
+      case "Snow":
+        document.body.style.backgroundImage = "url('./picturesHOR/res_snowy-hor.jpg')";
+        break;
+      case "Thunderstorm":
+        document.body.style.backgroundImage = "url('./picturesHOR/res_thunder1-hor.jpg')";
+        break;
+      // case "clear sky":
+      //   document.body.style.backgroundImage = "url('./picturesHOR/res_clear-hor.jpg')";
+      //   break;
+      // case "light clouds", "few clouds":
+      //   document.body.style.backgroundImage = "url('./picturesHOR/res_lightclouds-hor.jpg')";
+      //   break;
+      // case "overcast clouds":
+      //   document.body.style.backgroundImage = "url('./picturesHOR/res_overcast1-ver.jpg')";
+      //   break;
+      // case "broken clouds":
+      //   document.body.style.backgroundImage = "url('./picturesHOR/res_brokenclouds-hor.jpg')";
+      //   break;
+      // case "scattered clouds":
+      //   document.body.style.backgroundImage = "url('./picturesHOR/res_brokenclouds-hor.jpg')";
+      //   break;
+      // case "light rain", "dizzle":
+      //   document.body.style.backgroundImage = "url('./picturesHOR/res_lightrain-hor.jpg')";
+      //   break;
+      // case "moderate rain":
+      //   document.body.style.backgroundImage = "url('./picturesHOR/res_rainy-hor.jpg')";
+      //   break;
+      // case "thunderstorm", "light thunderstorm", "heavy thunderstorm":
+      //   document.body.style.backgroundImage = "url('./picturesHOR/res_thunder1-hor.jpg')";
+      //   break;
+      // case "smoke":
+      //   document.body.style.backgroundImage = "url('./picturesHOR/res_smoke-hor.jpg')";
+      //   break;
+      // case "smog":
+      //   document.body.style.backgroundImage = "url('./picturesHOR/res_smog-hor.jpg')";
+      //   break;
+      // case "snow", "light snow":
+      //   document.body.style.backgroundImage = "url('./picturesHOR/res_snowy-hor.jpg')";
+      //   break;
+      //     case "mist":
+      //   document.body.style.backgroundImage = "url('./picturesHOR/res_mist-hor.jpg')";
+      //   break;
 
-    default:
-      document.body.style.backgroundImage = "url('./picturesHOR/res2_default.jpg')";
-      break;
-  }
+      default:
+        document.body.style.backgroundImage = "url('./picturesHOR/res2_default.jpg')";
+        break;
+    }
 
 
-  let weatherDescriptionMain = document.getElementById(
-    "weatherDescriptionMain"
-  );
-  let temperatureElement = document.getElementById("temperatureMain");
-  let humidityElement = document.getElementById("humidity");
-  let windElement = document.getElementById("wind");
-  let cityName = document.getElementById("cityName");
-  let countryName = document.getElementById("countryName");
-  let weatherIcon = document.getElementById("iconImg");
+    let weatherDescriptionMain = document.getElementById("weatherDescriptionMain");
+    let temperatureElement = document.getElementById("temperatureMain");
+    let humidityElement = document.getElementById("humidity");
+    let windElement = document.getElementById("wind");
+    let cityName = document.getElementById("cityName");
+    let countryName = document.getElementById("countryName");
+    let weatherIcon = document.getElementById("iconImg");
+    let resultDescription;
 
-  weatherIcon.src =
-    "http://openweathermap.org/img/wn/" + dataServer.weather[0].icon + ".png";
 
-  let resultDescription = dataServer.weather[0].description;
-  weatherDescriptionMain.innerText = resultDescription.toUpperCase();
-  temperatureElement.innerHTML = Math.floor(dataServer.main.temp / 10) + " °C";
-  windElement.innerHTML = "Wind blows at " + Math.floor(dataServer.wind.speed) + " mph" + "...";
-  cityName.innerHTML = dataServer.name;
-  countryName.innerHTML = " ( " + dataServer.sys.country + " ) ";
-  humidityElement.innerHTML = "Humidity is by " + dataServer.main.humidity + "% ";
+    resultDescription = dataServer.weather[0].description;
+    weatherIcon.src = "http://openweathermap.org/img/wn/" + dataServer.weather[0].icon + ".png";
+    weatherDescriptionMain.innerText = resultDescription.toUpperCase();
+    temperatureElement.innerHTML = Math.floor(dataServer.main.temp / 10) + " °C";
+    windElement.innerHTML = "Wind blows at " + Math.floor(dataServer.wind.speed) + " mph" + "...";
+    cityName.innerHTML = dataServer.name;
+    countryName.innerHTML = " ( " + dataServer.sys.country + " ) ";
+    humidityElement.innerHTML = "Humidity is by " + dataServer.main.humidity + "% ";
 
-  setPositionWeatherBox();
+    setPositionWeatherBox();
 }
 
 function setPositionWeatherBox() {
